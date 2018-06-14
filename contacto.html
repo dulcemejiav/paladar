@@ -1,20 +1,32 @@
 <!doctype html>
-<html>
-<head>
+<html><head>
 <meta charset="utf-8">
 <title>contacto</title>
+<!--SEO-->
 <meta name="Description" content="Haga su reservación y disfrute de nuestro delicioso menú."/>
 <meta name="Keywords" content="reservar una mesa en Paladar, contactar al restaurante Paladar, hacer reservaciones en los mejores restaurantes de Tegucigalpa"/>
+	
+	
+<meta property="og:title" content="Paladar" />
+<meta property="og:type" content="video.movie" />
+<meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+<meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+	
 	
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link href="css/bootstrap.min.css" rel="stylesheet"/>
 	<link href="css/bootstrap-custom.css" rel="stylesheet"/>
-	<link href="css/style.css" rel="stylesheet"/> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="css/jquery.fancybox.min.css">
+	<link href="css/animate.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="css/stylecontato.css" rel="stylesheet"/> 
 
 	<!--SEO-->
 	<meta name="Description" content="Paladar es un restaurante gourmet que brinda peoductos y servicios de calidad.">
 	<meta name="Keywords" content="restaurantes,comida,bebida,servicios,restaurantes en tegucigalpa, restaurantes gourmet.">
-	
+
 </head>
 	
 <header>
@@ -44,13 +56,13 @@
                 <div class="collapse navbar-collapse" id="nav">
                  
 					<ul class="nav navbar-nav navbar-right">
-                    <li><a class="icono" href="#">Home</a></li>
-                        <li><a class="icono" href="#">Menú</a></li>
-                        <li><a class="icono" href="#">Recetas</a></li>
-                        <li><a class="icono" href="#">Testimonial</a></li>
-						<li class="active"><a class="icono" href="#">Contacto</a></li>
+                    <li><a class="icono" href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a class="icono" href="menu.html"><i class="fas fa-utensils"></i>Menú</a></li>
+                        <li><a class="icono" href="#"><i class="fas fa-clipboard-list"></i>Recetas</a></li>
+                        <li><a class="icono" href="#"><i class="fas fa-user"></i>Testimonial</a></li>
+						<li class="active"><a class="icono" href="contacto.html"><i class="fas fa-phone"></i>Contacto</a></li>
 					  
-                        <li class="dropdown"><a href="#" class="dropdown-toggle icono2" data-toggle="dropdown">Reservar <span class="caret"></span></a>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle icono2" data-toggle="dropdown"><i class="far fa-calendar-alt"></i>Reserva <span class="caret"></span></a>
                         	<ul class="dropdown-menu">
                             	<li><a href="#">Especial de la casa</a></li>
                                 <li><a href="#">Ideal para dos</a></li>
@@ -65,7 +77,10 @@
 </header>
 <body>
 	
-	<section id="sec-slide">	
+	<section id="sec-slide">
+		<div class="container">
+			<h2>Contacto</h2>
+		</div>
 	</section>
 	
 	<section id="sec-formulario">
@@ -89,7 +104,7 @@
 					<div class="row">
 						<div class="form-group 
 								col-md-6 col-sm-6 col-xs-12">
-							<label>Número de personas</label>
+							<label><i class="fas fa-users"></i>Número de personas</label>
 							<input 
 								type="number" 
 							   id="number" 
@@ -100,7 +115,7 @@
 						</div>
 						
 						<div class="form-group col-md-6 col-sm-6 col-xs-12">
-							<label>Un hora</label>
+							<label><i class="fas fa-clock"></i>Un hora</label>
 							<input type="time" 
 								   name="time" 
 								   id="time" 
@@ -109,7 +124,7 @@
 						</div>
 						
 						<div class="form-group col-md-6 col-sm-6 col-xs-12" >
-							<label>Fecha de Nacimiento</label>
+							<label><i class="far fa-calendar"></i>Fecha de Nacimiento</label>
 							<input type="date" 
 								   id="date" 
 								   name="date" 
@@ -131,7 +146,7 @@
 					<div class="row">
 						<div class="form-group 
 									col-md-6 col-sm-6 col-xs-12">
-							<label>Nombre</label>
+							<label><i class="fas fa-user-circle"></i>Nombre</label>
 							<input type="text" 
 								   id="nombre" 
 								   name="nombre" 
@@ -141,7 +156,7 @@
 						</div>
 					
 						<div class="form-group col-md-6 col-sm-6 col-xs-12">
-							<label>Apellido</label>
+							<label><i class="fas fa-id-card-alt"></i>Apellido</label>
 							<input type="text" 
 								   id="apellido" 
 								   name="apellido" 
@@ -151,7 +166,7 @@
 						</div>
 					
 						<div class="form-group group col-md-6 col-sm-6 col-xs-12">
-							<label>Correo electrónico</label>
+							<label><i class="fas fa-envelope"></i>Correo electrónico</label>
 							<input type="email" 
 								   id="correo" 
 								   name="correo" 
@@ -161,7 +176,7 @@
 						</div>
 					
 						<div class="form-group col-md-6 col-sm-6 col-xs-12">
-							<label>Tel</label>
+							<label><i class="fas fa-mobile-alt"></i>Tel</label>
 							<input type="tel" 
 								   id="telefono" 
 								   name="telefono" 
@@ -171,7 +186,7 @@
 						</div>
 					
 						<div class="form-group group col-md-6 col-sm-6 col-xs-12" >
-							<label>Idioma</label>
+							<label><i class="fas fa-language"></i>Idioma</label>
 							<input type="text" 
 								   id="texto" 
 								   name="texto" 
@@ -181,7 +196,7 @@
 						</div>
 						
 						<div class="form-group group col-md-6 col-sm-6 col-xs-12" >
-							<label>Nacionalidad</label>
+							<label><i class="fas fa-id-card"></i>Nacionalidad</label>
 							<input type="text" 
 								   id="text" 
 								   name="text" 
@@ -191,7 +206,7 @@
 						</div>
 					
 						<div class="form-group col-md-6 col-sm-6 col-xs-12">
-							<label>Lugar de procedencia</label>
+							<label><i class="fas fa-map-marker"></i>Lugar de procedencia</label>
 							<textarea id="direccion" 
 									  name="direccion" 
 									  class="form-control" 
@@ -200,7 +215,7 @@
 						</div>
 					
 						<div class="form-group group col-md-6 col-sm-6 col-xs-12" >
-							<label>Restricción alimenticia</label>
+							<label><i class="fas fa-ban"></i>Restricción alimenticia</label>
 							<textarea id="restriccion" 
 									  name="restriccion" 
 									  class="form-control" 
@@ -208,7 +223,7 @@
 							</textarea>
 						</div>
 					
-						<div class="checkbox">
+						<div class="form-group checkbox">
 							<label> 
 								<input type="checkbox" 
 									   id="Acepto" 
@@ -230,14 +245,22 @@
 				<p>
 					<a href="#" class="btn btn-medilab">Reservar</a>
 				</p>
-				<br>
-				
+				<br><br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.76900881186!2d-87.16796408513031!3d14.09080869012878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6fa33694cd9181%3A0xb3440ef847a99653!2sVilla+Olimpica!5e0!3m2!1sen!2shn!4v1529004495693" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				<p>
-					<a href="#" class="btn btn-medilab">Ver Menú</a>
-				</p>	
+				<br><br><br>
+					<a href="menu.html" class="btn btn-medilab">Ver Menú</a>
+				</p>
 		    </div>
 	</section>
-	
+	<br>
+	<section>
+	<div class="container">  
+        <div class="map_container">
+            <div id="map"></div>
+        </div>
+	</div>
+	</section>
 	
 	<footer>
 		<section id="sec-data">
@@ -269,7 +292,12 @@
 	
 <script src="js/jquery.min.js"></script>	
 <script src="js/bootstrap.min.js"></script>	
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b21c4b9b3a0a547"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 	
-
 </body>
 </html>
