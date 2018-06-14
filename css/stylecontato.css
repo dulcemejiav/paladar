@@ -12,23 +12,23 @@ header{
 	padding: 20px 0;
 }
 
-#sec-slide1{
+#sec-slide{
 	padding: 180px 0px;
-	background-image: url(../img/foodexample2.jpg);
+	background-image: url(../img/osteriafrancescana_home_0-e1490796784809.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
 	background-attachment: fixed;
-	width: auto;
 }
 
-#sec-slide1 h2{
+#sec-slide h2{
 	text-align: left;
 	margin: 0px 80px;
 	font-weight: bold;
+	color: rgba(237,237,237,1.00);
 	font-size: 70px;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';
 }
+
 h1,h2,h4{
 	font-family: 'Cambo', serif;
 	text-align: center;
@@ -40,8 +40,7 @@ h1,h2,h4{
 	text-align: justify;
 }
 #sec-services img{
-	padding: 20px 0px;
-	height: auto;
+	padding: 10px 0px;
 }
 
 #sec-formulario{
@@ -59,14 +58,15 @@ h1,h2,h4{
 #sec-formulario p{
 	text-align: center;
 	color:#151515;
-	margin: 30px 0px 30px 0px;
+	margin: 20px 0px 20px 0px;
 }
 
 .formulario{
 	background-color: #F5F5F5;
-	margin: 10px 10px;
-	padding: 5px 150px;
+	margin: 20px 0px;
+	padding: 40px;
 }
+
 .form-group label a{
 	color: #606060;
 	font-weight: bold;
@@ -85,7 +85,7 @@ h1,h2,h4{
 
 #sec-outro{
 	align-items: center;
-	padding: 150px 0px 10px 0px;
+	padding: 60px 0px 10px 0px;
 }
 
 #sec-linkmenu{
@@ -133,16 +133,12 @@ i{
 	height: 20px;
 }
 
-.container{
-	width:970px;
-	margin:0 auto;	
-}
-.map_container{
-	background-color:#F0F0F0;
-	border: 2px solid #DDD;
-	padding:5px;	
-}
-#map{
-	width:100%;
-	height:400px;
+.form-group i{
+	padding: 8px 10px;
+	height: 30px;
+	border-radius: 20%;
+	background-color: #432525;
+	color: #F5F5F5;
+	margin: 0px 15px 2px 0px;
+	align-content: center;
 }

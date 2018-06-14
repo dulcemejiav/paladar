@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css?family=Cambo|Muli|Roboto');
 
 body{
@@ -14,7 +15,7 @@ header{
 
 #sec-slide1{
 	padding: 180px 0px;
-	background-image: url(../img/foodexample2.jpg);
+	background-image: url(../img/foodexample1.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -24,11 +25,12 @@ header{
 
 #sec-slide1 h2{
 	text-align: left;
-	margin: 0px 80px;
+	margin: -120px 80px;
 	font-weight: bold;
 	font-size: 70px;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';
 }
+
 h1,h2,h4{
 	font-family: 'Cambo', serif;
 	text-align: center;
@@ -38,10 +40,19 @@ h1,h2,h4{
 #sec-services{
 	padding: 40px 0px 5px 0px;
 	text-align: justify;
+	margin: 20px 0px;
+}
+
+#sec-services .menu{
+	padding: 20px 0px;
+	margin: 10px 0px;
+}
+
+#sec-services .precio{
+	text-align: right;
 }
 #sec-services img{
-	padding: 20px 0px;
-	height: auto;
+	padding: 10px 0px;
 }
 
 #sec-formulario{
@@ -85,7 +96,10 @@ h1,h2,h4{
 
 #sec-outro{
 	align-items: center;
-	padding: 150px 0px 10px 0px;
+	padding: 180px 0px;
+	margin: 25px 0px;
+	background-attachment: fixed;
+	background-image: url(../img/footerfood.jpg)
 }
 
 #sec-linkmenu{
@@ -131,18 +145,4 @@ footer{
 i{	
 	padding: 0px 10px 0px 4px;
 	height: 20px;
-}
-
-.container{
-	width:970px;
-	margin:0 auto;	
-}
-.map_container{
-	background-color:#F0F0F0;
-	border: 2px solid #DDD;
-	padding:5px;	
-}
-#map{
-	width:100%;
-	height:400px;
 }

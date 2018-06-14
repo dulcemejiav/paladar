@@ -1,0 +1,84 @@
+'use strict';
+
+var $ = window.jQuery;
+
+// General reading options - posts per page
+var ppp = HOUSE_AJAX_BLOG.ppp;
+// Number of pages for query - 'max_num_pages'
+// @see inc/content/ajax-load-more.php
+var totalPages = HOUSE_AJAX_BLOG.ajaxpages;
+var totalP = +totalPages - 1;
+// prepare selectors
+var container = $( HOUSE_AJAX_BLOG.ajaxcontainer );
+var button = $( HOUSE_AJAX_BLOG.ajaxbutton );
+// Prepare counters for pages and clicks
+var pageNumber = 1;
+var buttonClick = 0;
+
+//WINDOW ONLOAD
+$(window).load(function() {
+
+	var ajax_container = $( container );
+
+	// masonry has problem calculating image size loaded with ajax which causes
+	// items to overlap
+	// defining 'itemSelector' again in ajax call seems to fix the issue
+	// @link https://github.com/desandro/masonry/issues/369#issuecomment-41149679
+	ajax_container.imagesLoaded( function() {
+		ajax_container.isotope({
+			itemSelector: '.grid-item'
+		});
+	});
+});
+
+//ON DOCUMENT READY
+$(document).ready(function() {
+
+	// AJAX load posts
+	function load_posts() {
+		pageNumber++;
+		var str = '&pageNumber=' + pageNumber + '&ppp' + ppp + '&action=' + HOUSE_AJAX_BLOG.ajaxaction;
+
+		$.ajax({
+			type: "POST",
+			dataType: "html",
+			url: HOUSE_AJAX_BLOG.ajaxurl,
+			data: str,
+			success: function( data ) {
+				var ajax_container = $( container );
+				var loadedData = $( data );
+
+				// load images before isotope is called
+				// so that items don't overlap
+				ajax_container.append( loadedData ).imagesLoaded( function() {
+					ajax_container.isotope( 'appended', loadedData, function () {
+						ajax_container.isotope( 'reLayout' );
+					});
+				});
+
+			}, // success
+			error: function( jqXHR, textStatus, errorThrown ) {
+				container.html( jqXHR + " :: " + textStatus + " :: " + errorThrown );
+			} // error
+		}); // $.ajax
+
+		return false;
+	} // load_posts()
+
+	// Finally click the button
+	$( button ).on( 'click', function() {
+
+		// Count clicks on button
+		buttonClick++;
+
+		// Hide/disable the button if no more 'pages'
+		// (total number of pages - 1 is equal to number of clicks)
+		if ( buttonClick === totalP ) {
+			$( button ).css( 'display', 'none' );
+		}
+
+		// Load more posts
+		load_posts();
+	}); // $( '#more_posts' ).on
+
+});
