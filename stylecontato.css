@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cambo|Muli|Roboto');
+
+body{
+	font-family: 'Muli', sans-serif;
+	font-size: 14px;
+	color: #333;	
+}
+
+header{
+	background-color: rgba(235,235,235,1.00);
+	padding: 20px 0;
+}
+
+#sec-slide{
+	padding: 180px 0px;
+	background-image: url(../img/osteriafrancescana_home_0-e1490796784809.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#sec-slide h2{
+	text-align: left;
+	margin: 0px 80px;
+	font-weight: bold;
+	color: rgba(237,237,237,1.00);
+	font-size: 70px;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';
+}
+
+h1,h2,h4{
+	font-family: 'Cambo', serif;
+	text-align: center;
+	color: #432525;
+	text-transform: uppercase;
+}
+#sec-services{
+	padding: 40px 0px 5px 0px;
+	text-align: justify;
+}
+#sec-services img{
+	padding: 10px 0px;
+}
+
+#sec-formulario{
+	margin: 20px 0px;
+}
+
+#sec-formulario h2{
+	text-align: center;
+	color: #432525;
+	text-transform: uppercase;
+	margin: 50px 0px 40px 0px;
+	font-weight: bold;
+}
+
+#sec-formulario p{
+	text-align: center;
+	color:#151515;
+	margin: 20px 0px 20px 0px;
+}
+
+.formulario{
+	background-color: #F5F5F5;
+	margin: 20px 0px;
+	padding: 40px;
+}
+
+.form-group label a{
+	color: #606060;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.form-group input{
+	background-color: white;
+	border: 0.5px solid #AFAFAF;
+}
+
+.form-group textarea{
+	background-color: white;
+	border: 0.5px solid #AFAFAF;
+}
+
+#sec-outro{
+	align-items: center;
+	padding: 60px 0px 10px 0px;
+}
+
+#sec-linkmenu{
+	text-align: center;
+	padding: 15px 0px 25px 0px;
+}
+#sec-linkmenu p{
+	text-transform: uppercase;
+}
+
+#sec-linkmenu a{
+	font-size: 18px;
+}
+
+.btn{
+	color: white;
+}
+
+.btn-medilab:hover{
+	background-color: white;
+	color: #432525;
+	border: solid 2px #432525; 
+}
+.btn-medilab{
+	background-color: #432525;
+	border-color: #432525;
+	color: white;
+	margin: 20px 0px;
+}
+
+footer{
+ 	background-color: #432525;
+	color: #FDFCFC;
+	text-align: center;
+	
+}
+
+#sec-data h3{
+	text-align: center;
+	font-size: 12px;
+}
+
+i{	
+	padding: 0px 10px 0px 4px;
+	height: 20px;
+}
+
+.form-group i{
+	padding: 8px 10px;
+	height: 30px;
+	border-radius: 20%;
+	background-color: #432525;
+	color: #F5F5F5;
+	margin: 0px 15px 2px 0px;
+	align-content: center;
+}
