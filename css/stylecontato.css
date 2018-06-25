@@ -14,17 +14,19 @@ header{
 
 #sec-slide{
 	padding: 180px 0px;
-	background-image: url(../img/osteriafrancescana_home_0-e1490796784809.jpg);
+	background-image: url(../img/testimonialeshead.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	background-attachment: fixed;
+	width: auto;
 }
 
 #sec-slide h2{
 	text-align: left;
 	margin: 0px 80px;
 	font-weight: bold;
-	color: rgba(237,237,237,1.00);
+	color: #432525;
 	font-size: 70px;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';
 }
@@ -126,6 +128,7 @@ footer{
 #sec-data h3{
 	text-align: center;
 	font-size: 12px;
+	color: white;
 }
 
 i{	

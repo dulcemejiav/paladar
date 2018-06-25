@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css?family=Cambo|Muli|Roboto');
 
 body{
@@ -13,20 +12,19 @@ header{
 	padding: 20px 0;
 }
 
-#sec-slide1{
+#sec-slide{
 	padding: 180px 0px;
-	background-image: url(../img/foodexample1.jpg);
+	background-image: url(../img/osteriafrancescana_home_0-e1490796784809.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
 	background-attachment: fixed;
-	width: auto;
 }
 
-#sec-slide1 h2{
+#sec-slide h2{
 	text-align: left;
-	margin: -120px 80px;
+	margin: 0px 80px;
 	font-weight: bold;
+	color: rgba(237,237,237,1.00);
 	font-size: 70px;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';
 }
@@ -40,16 +38,6 @@ h1,h2,h4{
 #sec-services{
 	padding: 40px 0px 5px 0px;
 	text-align: justify;
-	margin: 20px 0px;
-}
-
-#sec-services .menu{
-	padding: 20px 0px;
-	margin: 10px 0px;
-}
-
-#sec-services .precio{
-	text-align: right;
 }
 #sec-services img{
 	padding: 10px 0px;
@@ -70,14 +58,15 @@ h1,h2,h4{
 #sec-formulario p{
 	text-align: center;
 	color:#151515;
-	margin: 30px 0px 30px 0px;
+	margin: 20px 0px 20px 0px;
 }
 
 .formulario{
 	background-color: #F5F5F5;
-	margin: 10px 10px;
-	padding: 5px 150px;
+	margin: 20px 0px;
+	padding: 40px;
 }
+
 .form-group label a{
 	color: #606060;
 	font-weight: bold;
@@ -96,18 +85,11 @@ h1,h2,h4{
 
 #sec-outro{
 	align-items: center;
-	padding: 180px 0px;
-	margin: 25px 0px;
-	background-image: url(../img/footermenu.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-	width: auto;
+	padding: 60px 0px 10px 0px;
 }
 
 #sec-linkmenu{
-	text-align: center;
+	text-align: left;
 	padding: 15px 0px 25px 0px;
 }
 #sec-linkmenu p{
@@ -144,9 +126,24 @@ footer{
 #sec-data h3{
 	text-align: center;
 	font-size: 12px;
+	color: white;
+}
+
+#sec-data p{
+	color: white;
 }
 
 i{	
 	padding: 0px 10px 0px 4px;
 	height: 20px;
+}
+
+.form-group i{
+	padding: 8px 10px;
+	height: 30px;
+	border-radius: 20%;
+	background-color: #432525;
+	color: #F5F5F5;
+	margin: 0px 15px 2px 0px;
+	align-content: center;
 }
